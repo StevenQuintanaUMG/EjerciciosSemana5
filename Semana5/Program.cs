@@ -29,8 +29,7 @@ while (radio <= 0)
     }
 }
 
-double area = area_circulo(radio);
-Console.WriteLine("\nEl area del circulo es: {0:N2}", area);
+Console.WriteLine("\nEl area del circulo es: {0:N2}", area_circulo(radio));
 
 pulsartecla();
 
@@ -39,8 +38,7 @@ pulsartecla();
 Console.WriteLine("-------Calcular perimetro de un rectangulo con base y altura-------");
 static double perimetro_rectangulo(double Rectbase, double Rectaltura)
 {
-    double perimetro = 2 * (Rectbase + Rectaltura);
-    return perimetro;
+    return 2 * (Rectbase + Rectaltura);
 }
 
 double Rectbase = 0;
@@ -74,8 +72,7 @@ while (Rectaltura <= 0)
     }
 }
 
-double perimetro = perimetro_rectangulo(Rectbase, Rectaltura);
-Console.WriteLine("\nEl perimetro del rectangulo es: {0:N2}", perimetro);
+Console.WriteLine("\nEl perimetro del rectangulo es: {0:N2}", perimetro_rectangulo(Rectbase, Rectaltura));
 
 pulsartecla();
 
@@ -84,8 +81,7 @@ pulsartecla();
 Console.WriteLine("-------Calcular promedio de una lista de numeros-------");
 static double promedio_numeros(List<int> lista)
 {
-    double promedio = lista.Average();
-    return promedio;
+    return lista.Average();
 }
 
 bool condicion = false;
@@ -107,8 +103,7 @@ while (!condicion)
     }
 }
 
-double promedio = promedio_numeros(lista);
-Console.WriteLine("\nEl promedio de la lista de numeros es: {0:N2}", promedio);
+Console.WriteLine("\nEl promedio de la lista de numeros es: {0:N2}", promedio_numeros(lista));
 
 pulsartecla();
 
